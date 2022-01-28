@@ -5,10 +5,10 @@ Tarkoituksena on tehdä Pythonilla sovellus kirjoitusvirheiden korjaaja sovellus
 
 ## [Viikkoraportit](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/tree/main/dokumentit/viikkoraportit)
 
-## [Määrittelydokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/m%C3%A4%C3%A4rittelydokumentti)
+## [Määrittelydokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/m%C3%A4%C3%A4rittelydokumentti.md)
 
-## [Toteutusdokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/toteutusdokumentti)
+## [Toteutusdokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/toteutusdokumentti.md)
 
-## [Testausdokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/testausdokumentti)
+## [Testausdokumentti](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/testausdokumentti.md)
 
-## [Käyttöohje](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/k%C3%A4ytt%C3%B6ohje)
+## [Käyttöohje](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/k%C3%A4ytt%C3%B6ohje.md)
