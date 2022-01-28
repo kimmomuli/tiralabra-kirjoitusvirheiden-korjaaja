@@ -1,6 +1,7 @@
 class Node:
     def __init__(self, character: str):
         self.value = character
+        self.is_last_character = False
         self.children = {}
 
 class Trie:
@@ -25,18 +26,19 @@ class Trie:
                 new_node = Node(char)
                 node.children[char] = new_node
                 node = new_node
+        node.is_last_character = True
 
     def __recursion(self, result: list, node: Node, words_part: str):
         """
 
-        Let's find out all possible words which start with variable words_part
+        Let's find out all possible words which start with variable words_part.
 
         Args:
             result (list): result words
             node (Node): node at the moment
             words_part (str): part of a word at the moment
         """
-        if len(node.children) == 0:
+        if node.is_last_character:
             result.append(words_part + node.value)
         
         for child in node.children.values():
@@ -66,14 +68,3 @@ class Trie:
 
         self.__recursion(result, node, words_part[:-1])
         return result
-        
-
-
-if __name__ == '__main__':
-    trie = Trie()
-    trie.insert('kissa')
-    trie.insert('kirja')
-    trie.insert('koira')
-    trie.insert('kili')
-
-    print(trie.search("ki"))
