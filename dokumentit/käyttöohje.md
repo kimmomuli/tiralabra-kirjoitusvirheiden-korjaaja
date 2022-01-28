@@ -29,3 +29,16 @@ Tai voit vaihtoehtoisesti ajaa testikattavuuden html tiedostoon komennolla
 coverage html
 ```
 Komento luo hakemiston htmlcov. Avaamalla siellä sijaitseva tiedosto index.html sisältää testikattavuuden.
+
+## Pylint
+Käynnistetään virtuaaliympäristö 
+
+```
+poetry shell
+```
+Voit lopettaa virtuaaliympäristön komennolla exit.
+
+Pylint laatutarkistuksen voi suorittaa komennolla.
+```
+pylint src
+```
