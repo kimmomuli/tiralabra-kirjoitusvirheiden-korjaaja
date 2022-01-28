@@ -1,4 +1,10 @@
 
+## Riippuvuudet
+Voit asentaa riippuvuudet komennolla 
+```
+poetry install
+```
+
 ## Testit
 HUOM! aja komennot projekti hakemistossa, johon pääset `cd projekti` 
 
