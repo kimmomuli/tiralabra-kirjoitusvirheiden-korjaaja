@@ -10,7 +10,8 @@ class Trie:
 
     def insert(self, word: str):
         """
-        Let's go through the characters of the word one by one. Let's compare to character to node value.
+        Let's go through the characters of the word one by one.
+        Let's compare to character to node value.
 
         Args:
             word (str): word which going to add into trie
@@ -40,7 +41,7 @@ class Trie:
         """
         if node.is_last_character:
             result.append(words_part + node.value)
-        
+
         for child in node.children.values():
             self.__recursion(result, child, (words_part + node.value))
 

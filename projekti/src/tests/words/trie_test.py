@@ -1,7 +1,6 @@
 import unittest
 from words.trie import Trie
 
-
 class TestTrie(unittest.TestCase):
     def setUp(self):
         self.trie = Trie()
