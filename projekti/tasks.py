@@ -6,8 +6,16 @@ def start(ctx):
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest src")
+    ctx.run("coverage run --branch -m pytest src", pty=True)
 
 @task(coverage)
 def coverage_report(ctx):
-    ctx.run("coverage html")
+    ctx.run("coverage html", pty=True)
+
+@task(coverage)
+def coverage_terminal_report(ctx):
+    ctx.run("coverage report -m", pty=True)
+
+@task
+def pylint(ctx):
+    ctx.run('pylint src', pty=True)
