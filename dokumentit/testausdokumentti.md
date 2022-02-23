@@ -2,6 +2,8 @@
 
 ### Testikattavuus
 
+![testikattavuus](https://github.com/kimmomuli/tiralabra-kirjoitusvirheiden-korjaaja/blob/main/dokumentit/testikattavuus.png)
+
 ### Mitä on testattu
 
 ```
