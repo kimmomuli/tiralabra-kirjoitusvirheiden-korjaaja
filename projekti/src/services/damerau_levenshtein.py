@@ -1,4 +1,19 @@
 def damerau_levenshtein(string1: str, string2: str) -> int:
+    """
+        Calculates distance between two words.
+
+        Possible moves:
+            - Deletion (one move)
+            - Insertion (one move)
+            - substitution (zero or one move)
+
+    Args:
+        string1 (str): First word what we want to compare
+        string2 (str): Second word what we want to compare
+
+    Returns:
+        int: Distance between two words
+    """
     matrix = {}
 
     string_1_length = len(string1)

@@ -1,14 +1,17 @@
 import os
 from words.trie import Trie
 
-
 class WordService:
+    """ Wordservice is a service for Trie. Wordservice also insertd all words to Trie.
+    """
     def __init__(self):
         self.trie = Trie()
         self.all_words = []
 
     def read_words_to_trie(self):
-        """kaikkisanat.txt ---> Trie
+        """
+            kaikkisanat.txt ---> Trie
+            Every word add also to list (all_words)
         """
         dirname = os.path.dirname(__file__)
         filename = os.path.join(dirname, './kaikkisanat.txt')

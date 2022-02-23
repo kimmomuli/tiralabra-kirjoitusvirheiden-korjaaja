@@ -2,6 +2,10 @@ from tkinter import Button, Text, Label
 from services.fix_text import FixText
 
 class UI:
+    """
+        User interface using tkinter
+    """
+
     def __init__(self, root):
         self._root = root
         self._label_var = None
@@ -10,6 +14,18 @@ class UI:
         self.fixer = FixText()
 
     def start(self):
+        """
+            Create Graphical user interface (GUI)
+
+            GUI contains:
+                - text area for input
+                - text area for output
+                - title
+                - text title (label font-size 30)
+                - button for reset
+                - button for fix
+                - button for fix fast
+        """
         self.__txt_area = Text(master=self._root,)
 
         reset_button = Button(
@@ -43,6 +59,10 @@ class UI:
         self.__answer_text.grid(row=3, columnspan=3, sticky='nsew')
 
     def __fix_text(self):
+        """
+            Button split text to words.
+            Then it fixes text word by word using words first letter and by Damerau Levenshtein-algorithm.
+        """
         input_text = self.__txt_area.get('1.0','end-1c')
         self.__answer_text.delete('1.0','end')
         
@@ -51,6 +71,11 @@ class UI:
         self.__answer_text.grid(row=3, columnspan=3)
 
     def __fix_text_fastly(self):
+        """
+            Button split text to words.
+            Then it fixes text word by word using words first letter and by Damerau Levenshtein-algorithm.
+            It founds words by same first letter.
+        """
         input_text = self.__txt_area.get('1.0','end-1c')
         self.__answer_text.delete('1.0','end')
         
@@ -59,5 +84,8 @@ class UI:
         self.__answer_text.grid(row=3, columnspan=3)
 
     def __reset(self):
+        """
+            Reset button reset text areas.
+        """
         self.__answer_text.delete('1.0','end')
         self.__txt_area.delete('1.0','end')

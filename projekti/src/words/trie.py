@@ -1,11 +1,29 @@
 class Node:
+    """ Node of Trie.
+        Node contains information:
+            - Is node, end of some word
+            - children of node
+            - node value (character)
+    """
+
     def __init__(self, character: str):
         self.value = character
         self.is_last_character = False
         self.children = {}
 
 class Trie:
+    """
+        Trie is a data structure of words.
+        Trie contains methods:
+            - insert
+            - search
+            - word_exist
+    """
+
     def __init__(self):
+        """
+            Root node which is an empty string.
+        """
         self.root_node = Node("")
 
     def insert(self, word: str):
@@ -72,7 +90,16 @@ class Trie:
         return result
 
     def word_exist(self, word:str) -> bool:
+        """ Find out, if Trie contains a word
 
+        Args:
+            word (str): Word, what we looking for.
+
+        Returns:
+            bool:
+                found --> True
+                not found --> False
+        """
         node = self.root_node
 
         for char in word:
