@@ -5,8 +5,8 @@ def main():
     window = Tk()
     window.title("Kirjoitusvirheiden korjaaja")
 
-    ui = UI(window)
-    ui.start()
+    use_interface = UI(window)
+    use_interface.start()
 
     window.rowconfigure(0, minsize=400, weight=1)
     window.rowconfigure(3, minsize=400, weight=1)

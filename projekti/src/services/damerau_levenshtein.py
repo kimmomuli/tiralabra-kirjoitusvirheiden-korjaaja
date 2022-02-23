@@ -10,30 +10,18 @@ def damerau_levenshtein(string1: str, string2: str) -> int:
     for i in range(string_2_length + 1):
         matrix[0, i] = i
 
-    for y in range(1, string_2_length + 1):
-        for x in range(1, string_1_length + 1):
+    for y_coordinate in range(1, string_2_length + 1):
+        for x_coordinate in range(1, string_1_length + 1):
 
-            if string1[x - 1] == string2[y - 1]:
+            if string1[x_coordinate - 1] == string2[y_coordinate - 1]:
                 move = 0
             else:
                 move = 1
 
-            matrix[x, y] = min(
-                matrix[x - 1, y] + 1,
-                matrix[x, y - 1] + 1,
-                matrix[x - 1, y - 1] + move,
+            matrix[x_coordinate, y_coordinate] = min(
+                matrix[x_coordinate - 1, y_coordinate] + 1,
+                matrix[x_coordinate, y_coordinate - 1] + 1,
+                matrix[x_coordinate - 1, y_coordinate - 1] + move,
             )
-
-    # print('Koordinaatit:')
-    # for y in range(string_2_length + 1):
-    #     for x in range(string_1_length + 1):
-    #         print(f'({x}, {y})', end='')
-    #     print()
-    # print()
-    # print('Arvot:')
-    # for y in range(string_2_length + 1):
-    #     for x in range(string_1_length + 1):
-    #         print(matrix[x, y], end=' ')
-    #     print()
 
     return matrix[string_1_length, string_2_length]

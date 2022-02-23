@@ -24,3 +24,4 @@ class TestTrie(unittest.TestCase):
 
     def test_search_many_words(self):
         self.assertEqual(len(self.trie.search('k')), 4)
+                

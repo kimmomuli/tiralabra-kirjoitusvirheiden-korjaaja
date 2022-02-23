@@ -10,6 +10,7 @@ class Trie:
 
     def insert(self, word: str):
         """
+
         Let's go through the characters of the word one by one.
         Let's compare to character to node value.
 
@@ -69,3 +70,15 @@ class Trie:
 
         self.__recursion(result, node, words_part[:-1])
         return result
+
+    def word_exist(self, word:str) -> bool:
+
+        node = self.root_node
+
+        for char in word:
+            if char in node.children:
+                node = node.children[char]
+            else:
+                return False
+
+        return node.is_last_character
