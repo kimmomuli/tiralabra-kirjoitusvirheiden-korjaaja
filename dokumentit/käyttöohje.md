@@ -1,10 +1,11 @@
+# Ohjelman käyttö
 
-# Riippuvuudet
-Voit asentaa riippuvuudet komennolla 
-```
-poetry install
-```
-
+Aja ohjelma alla olevien ohjeiden mukaan.
+Syötä ylempään tekstikenttään sanoja, jotka ovat välilyönnillä erotettu toisistaan.
+Voit korjata sanat painamalla `Korjaa teksti`.
+Tämä saattaa kestää hieman.
+Mikäli haluat korjata tekstin nopeammin, mutta ei niin tarkasti paina `Korjaa teksti nopeasti`.
+Voit nollata molemmat tekstikentät painamalla `Nollaa`.
 
 
 # Ohjeet
@@ -12,6 +13,12 @@ Mene projekti kansioon komennolla
 ```
 cd projekti
 ```
+
+Voit asentaa riippuvuudet komennolla 
+```
+poetry install
+```
+
 ## Ohjelman käynnistys
 
 Voit ajaa ohjelman komennolla 
