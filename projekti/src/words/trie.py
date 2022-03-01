@@ -39,10 +39,8 @@ class Trie:
 
         for char in word:
             if char in node.children:
-                #character is already into Trie
                 node = node.children[char]
             else:
-                #character was not into Trie so add let's add new node
                 new_node = Node(char)
                 node.children[char] = new_node
                 node = new_node
@@ -84,7 +82,7 @@ class Trie:
             if char in node.children:
                 node = node.children[char]
             else:
-                return result #no results so return empty list
+                return result
 
         self.__recursion(result, node, words_part[:-1])
         return result
