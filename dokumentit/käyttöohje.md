@@ -8,22 +8,17 @@ Mikäli haluat korjata tekstin nopeammin, mutta ei niin tarkasti paina `Korjaa t
 Voit nollata molemmat tekstikentät painamalla `Nollaa`.
 
 
-
-
-
-# Riippuvuudet
-Voit asentaa riippuvuudet komennolla 
-```
-poetry install
-```
-
-
-
 # Ohjeet
 Mene projekti kansioon komennolla 
 ```
 cd projekti
 ```
+
+Voit asentaa riippuvuudet komennolla 
+```
+poetry install
+```
+
 ## Ohjelman käynnistys
 
 Voit ajaa ohjelman komennolla 
